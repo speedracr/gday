@@ -1,0 +1,16 @@
+web:
+  image: gewo/ruby:2.3.0
+  volumes:
+    - .:/mnt
+    - /tmp:/host_tmp
+    - $HOME/.bashrc:/.bashrc
+    - $HOME/.bash_history:/.bash_history
+    - $HOME/.gitconfig:/.gitconfig
+    - $SSH_AUTH_SOCK:/tmp/agent.sock
+  environment:
+    - SSH_AUTH_SOCK=/tmp/agent.sock
+  ports:
+    - 4567:4567
+    - 9393:9393
+  working_dir: /mnt
+  command: ./run

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+source /etc/shell_env
+# set -x
+cd /mnt
+shotgun app.rb
+
