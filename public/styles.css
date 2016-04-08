@@ -5,6 +5,17 @@ body {
   font-family: 'Open Sans'
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
 h1 {
   color: red;
+}
+
+#map {
+  height: 600px;
+  width: 100%;
+  border-radius: 10px;
 }
