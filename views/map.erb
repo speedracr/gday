@@ -6,6 +6,19 @@
   </head>
   <body>
     <script>
+    function(window, google) {
+      var options = {
+        center: {
+          lat: 37.79,
+          lng: -122.43
+        }
+        zoom: 10
+      },
+      element = document.getElementById('map'),
+      map = new google.maps.Map(element, options);
+
+    };
+
       console.log("Hallo!");
       var map;
       function initMap() {
