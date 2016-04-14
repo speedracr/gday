@@ -5,6 +5,13 @@ body {
   font-family: 'Open Sans'
 }
 
+footer {
+  width: 80%;
+  margin-top: 3rem;
+  position: absolute;
+  bottom: 1rem;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 80%;
