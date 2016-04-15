@@ -11,8 +11,10 @@
         center: {
           lat: 37.79,
           lng: -122.43
-        }
-        zoom: 10
+        },
+        zoom: 10,
+        disableDefaultUI: true,
+        scrollwheel: false
       },
       element = document.getElementById('map'),
       map = new google.maps.Map(element, options);
