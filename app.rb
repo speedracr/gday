@@ -31,6 +31,11 @@ get "/token" do
   erb :token
 end
 
+post "/unbounce" do
+  @params = params
+  erb :unbounce
+end
+
 get "/nav" do
   html =
   """

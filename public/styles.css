@@ -26,3 +26,13 @@ h1 {
   width: 100%;
   border-radius: 10px;
 }
+
+.key {
+  float: left;
+  width: 20%;
+}
+
+.empty {
+  color: gray;
+  font-style: italic;
+}

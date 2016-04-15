@@ -1,0 +1,15 @@
+<h1> Unbounce params</h1>
+<p>
+<%= @params.inspect %>
+</p>
+<p>
+  <% @params.each do |param| %>
+    <div class="param">
+      <span class="key"> <%= param[0] %> </span>
+      <% if param[1].empty? %>
+        <span class="value empty"> no value given </span>
+      <% end %>
+      <span class="value"> <%= param[1] %> </span>
+    </div>
+  <% end %>
+</p>
