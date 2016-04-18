@@ -31,7 +31,11 @@ get "/token" do
   erb :token
 end
 
+# UNBOUNCE: Capture params
 post "/unbounce" do
+  @referrer = request.referrer
+  @url = request.url
+  @ip = request.ip
   @params = params
   erb :unbounce
 end
