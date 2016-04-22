@@ -33,10 +33,15 @@ end
 
 # UNBOUNCE: Capture params
 post "/unbounce" do
+  headers 'Access-Control-Allow-Origin' => 'http://unbouncepages.com'
   @referrer = request.referrer
   @url = request.url
   @ip = request.ip
   @params = params
+  erb :unbounce
+end
+
+get "/unbounce" do
   erb :unbounce
 end
 
