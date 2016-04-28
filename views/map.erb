@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PhotoSearchy</title>
+    <title>PhotoSearchyMap</title>
     <link rel='stylesheet' href='styles.css'>
   </head>
   <body>
     <h1>Hello user!</h1>
     <h2>Here are your photos</h2>
     <div id="map"></div>
+    <script>
+      pics = [
+        {
+          lat: 37.791350,
+          lng: -122.435883,
+          icon: 'http://i.imgur.com/TaSF0Yk.png'
+        },
+        {
+          lat: 42.234555,
+          lng: -110.987998,
+          icon: 'http://i.imgur.com/TaSF0Yk.png'
+        }
+      ]
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwrNN4W7yVJsX1XbSd3xuO1cvGO4pGkow">
     </script>
+    <script src='mapster.js'></script>
     <script src='map_options.js'></script>
     <script src='scripts.js'></script>
   </body>

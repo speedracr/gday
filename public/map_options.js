@@ -4,9 +4,8 @@
       lat: 37.79,
       lng: -122.43
     },
-    zoom: 10,
+    zoom: 3,
     mapTypeId: "hybrid",
-    disableDefaultUI: true,
     scrollwheel: false
   };
 }(window, window.Mapster || (window.Mapster = {})))

@@ -17,3 +17,8 @@
 **Next**
 * Get Instagram keys.
 * Get an Instagram search going on the tux console.
+
+## API query
+Results are returned as Hashie hashes:
+`client.user_recent_media.first.images.standard_resolution.url`
+`client.user_recent_media.first.location`
