@@ -1,0 +1,18 @@
+<div class='wrapper'>
+  <h1>Hello user!</h1>
+  <% if ["korallenriff", "kornblumen"].include? params[:searchterm] %>
+    <img src="<%= params[:searchterm] %>.jpg">
+  <% end %>
+  <h2>You searched for:</h2>
+  <h3>Korallenriff</h3>
+
+  <ul class='tweets'>
+    <% @tweets.each do |tweet| %>
+      <li class='tweet'>
+        <a href="<%= tweet.uri.to_s %>">
+        <%= tweet.text %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>
