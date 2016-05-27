@@ -26,3 +26,8 @@ h1 {
   width: 100%;
   border-radius: 10px;
 }
+
+#mapWrapper {
+  height: 600px;
+  width: 100%;
+}

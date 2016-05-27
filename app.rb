@@ -17,6 +17,14 @@ get '/' do
  '<a href="/oauth/connect">Connect with Instagram</a>'
 end
 
+get '/bing' do
+  erb :bing
+end
+
+get '/test' do
+  erb :test
+end
+
 get "/oauth/connect" do
   redirect Instagram.authorize_url(:redirect_uri => CALLBACK_URL)
 end
